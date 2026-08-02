@@ -55,3 +55,21 @@ npm run dev
 Aplicação disponível em `http://localhost:5173`.
 
 ## Estrutura
+
+stockflow/
+├── backend/ # API FastAPI
+│ ├── main.py # rotas
+│ ├── models.py # tabelas (SQLAlchemy)
+│ ├── schemas.py # contratos de entrada/saída (Pydantic)
+│ ├── database.py # configuração da conexão
+│ └── seed.py # dados de exemplo
+└── frontend/ # SPA React
+└── src/
+├── components/
+├── api.ts # camada de comunicação com a API
+└── types.ts # tipos compartilhados
+
+
+## Licença
+
+MIT
